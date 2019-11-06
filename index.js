@@ -47,7 +47,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // HINT: Check each object's itemName value key to see if it matches the parameter, 
+  // HINT: Check each object's itemName value key to see if it matches the parameter,
   // then remove it if it matches. You might find Array.prototype.splice() to be useful.
   for (var i = 0; i < cart.length; i++) {
     let cartItem = cart[i];
