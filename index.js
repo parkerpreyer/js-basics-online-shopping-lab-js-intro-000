@@ -52,12 +52,12 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     let cartItem = cart[i];
     if(cartItem[itemName] === item) {
-      cartItem.splice(1, cartItem);
+      cartItem.splice(cartItem, 1);
+      i--;
     } else {
         return 'That item is not in your cart.';
     }
   }
-  return cart;
 }
 
 function placeOrder(cardNumber) {
