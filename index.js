@@ -62,5 +62,10 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  let total = total();
+  if (cardNumber === undefined);
+    return 'Sorry but this is not a valid credit card number';
+  else {
+    return `Your total cost is `;
+  }
 }
