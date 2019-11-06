@@ -47,17 +47,17 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // HINT: Check each object's itemName value key to see if it matches the parameter,
-  // then remove it if it matches. You might find Array.prototype.splice() to be useful.
-
+  const isItemInCart = false;
   for (var i = 0; i < cart.length; i++) {
     let cartItem = cart[i];
     if(cartItem.itemName === item) {
       cart.splice(i, 1);
+      isItemInCart = true;
       return cart;
     }
-    console.log('That item is not in your cart.');
-    return cart;
+    if (isItemInCart === false) {
+      console.log('That item is not in your cart.');
+    }
   }
 }
 
