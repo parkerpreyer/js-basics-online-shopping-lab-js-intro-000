@@ -63,7 +63,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
-    let chargeStatement = `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`;
+    let chargeStatement = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
     cart = [];
     return chargeStatement;
   } else {
