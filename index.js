@@ -51,7 +51,6 @@ function removeFromCart(item) {
   // then remove it if it matches. You might find Array.prototype.splice() to be useful.
   for (var i = 0; i < cart.length; i++) {
     let cartItem = cart[i];
-    debugger;
     if(cartItem.itemName === item) {
       cartItem.splice(cartItem, 1);
       i--;
