@@ -53,8 +53,11 @@ function removeFromCart(item) {
     let cartItem = cart[i];
     if(cartItem[itemName] === item) {
       cartItem.splice(1, cartItem);
+    } else {
+      return 'That item is not in your cart.';
     }
   }
+  return cart;
 
 }
 
