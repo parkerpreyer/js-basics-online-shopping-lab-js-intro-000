@@ -55,9 +55,9 @@ function removeFromCart(item) {
       isItemInCart = true;
       return cart;
     }
-    if (isItemInCart === false) {
-      console.log('That item is not in your cart.');
-    }
+  }
+  if (isItemInCart === false) {
+    console.log('That item is not in your cart.');
   }
 }
 
