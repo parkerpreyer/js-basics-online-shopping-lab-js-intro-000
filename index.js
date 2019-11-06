@@ -52,11 +52,11 @@ function removeFromCart(item) {
 
   for (var i = 0; i < cart.length; i++) {
     let cartItem = cart[i];
-    if(cart.includes(item)) {
+    if(cartItem.itemName === item) {
       cart.splice(i, 1);
       return cart;
     }
-    console.log("That item is not in your cart.");
+    console.log('That item is not in your cart.');
   }
   return cart;
 }
